@@ -1,8 +1,212 @@
-html {
-  box-sizing: border-box;
+@import 'vars';
+@import 'global';
+
+
+
+.header__top {
+  background-color: $top;
 }
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
+.header__top-inner {
+  display: flex;
+  justify-content: space-between;
+  height: 90px;
+  align-items: center;
 }
+
+.header__btn-seller {
+  padding: 4px;
+  width: 140px;
+  border-radius: 14px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: $bottom;
+  line-height: 28px;
+  margin-right: 405px;
+}
+
+.menu {
+  display: flex;
+  height: 80px;
+  align-items: center;
+}
+.menu__list {
+  margin-right: 285px;
+  li {
+    display: inline-block;
+    & + li {
+      margin-left: 27px;
+    }
+  }
+  a {
+    color: #000000;
+    font-size: 15px;
+    font-weight: 500;
+    
+  }
+}
+.form__input {
+  width: 360px;
+  position: relative;
+  input {
+    width: 100%;
+    height: 44px;
+    border-width: 1px;
+    border-color: rgb(217, 223, 229);
+    border-style: solid;
+    border-radius: 22px;
+    padding-left: 17px;
+    padding-right: 75px;
+    outline: none;
+    &::placeholder {
+      color: rgb(137, 143, 150);
+      font-size: 15px;
+      
+    }
+  }
+  button {
+    position: absolute;
+    border: none;
+    background-color: $bottom;
+    right: 1px;
+    top: 1px;
+    height: 44px;
+    width: 70px;
+    border-radius: 22px;
+  }
+}
+.box {
+  background-color: $bg;
+}
+.header__title {
+  text-align: center;
+  color: #f3f3f8;
+  position: relative;
+  &-inner {
+    padding-top: 180px;
+    padding-bottom: 250px;
+  }
+  &-caption {
+    font-size: 60px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  &-slogan {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 50px;
+  }
+  &-text {
+    font-size: 20px;
+    margin-bottom: 60px;
+  }
+  &-btn {
+    padding: 20px 30px;
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: wheat;
+    cursor: pointer;
+  }
+}
+.header__title-btn + .header__title-btn {
+  margin-left: 30px;
+}
+
+.form__categories {
+  width: 100%;
+  background-color: white;
+  height: 130px;
+  position: absolute;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
+  bottom: -65px;
+  border-radius: 10px;
+  form {
+    padding: 40px;
+    input {
+      width: 50%;
+      height: 53px;
+      padding-left: 28px;
+      padding-right: 10px;
+      padding-top: 4px;
+      border: 1px solid #dcdcdc;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      &::placeholder {
+        font-size: 20px;
+        color: #6c6c6c;
+      }
+    }
+    select {
+      margin-left: -5px;
+      height: 53px;
+      border: 1px solid #dcdcdc;
+      padding-left: 20px;
+      padding-right: 72px;
+      font-size: 20px;
+      color: #6c6c6c;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+    .btn-search {
+      color: white;
+      padding: 17px 67px;
+      background-color: $bottom;
+      border-radius: 10px;
+      margin-left: 30px;
+    }
+  }
+}
+.features {
+  margin-top: 185px;
+  .features__wrap {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    .features__box {
+      max-width: 360px;
+      padding: 40px 35px;
+      cursor: pointer;
+      text-align: center;
+      img {
+        padding-bottom: 32px;
+      }
+      h4 {
+        font-size: 24px;
+        font-weight: 500;
+        padding-bottom: 32px;
+      }
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+        color: #555555;
+      }
+    }
+    .features__box:hover {
+      box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+      border-radius: 10px;
+    }
+  }
+}
+ 
+.products {
+  margin-top: 122px;
+  background-color: #eff1f5;
+  overflow: hidden;
+  .title {
+    margin-top: 122px;
+    background-color: white;
+    padding: 40px 0px 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    font-size: 30px;
+    line-height: 28px;
+  }
+}
+
+
+
+
+
