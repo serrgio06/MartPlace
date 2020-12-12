@@ -345,6 +345,10 @@
       border-radius: 20px;
       border: none;
       cursor: pointer;
+      &.mixitup-control-active {
+        color: white;
+        background-color: $bottom;
+      }
     }
     button + button {
       margin-left: 10px;
@@ -365,7 +369,7 @@
     border-bottom-right-radius: 7px;
     margin-bottom: 30px;
     .box__images {
-      min-height: 230px;
+      height: 230px;
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
@@ -373,8 +377,38 @@
       border-top-left-radius: 7px;
       border-top-right-radius: 7px;
     }
+    .box__images:hover .box__images-link {
+      opacity: 1;
+    }
+    .box__images-link {
+      width: 100%;
+      height: 100%;
+      background-image: -webkit-gradient(linear, right top, left top, from(rgba(5, 115, 237, 0.8)), to(rgba(115, 71, 194, 0.8)));
+      background-image: -o-linear-gradient(right, rgba(5, 115, 237, 0.8) 0%, rgba(115, 71, 194, 0.8) 100%);
+      background-image: linear-gradient(to left, rgba(5, 115, 237, 0.8) 0%, rgba(115, 71, 194, 0.8) 100%);
+      opacity: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.3s;
+    } 
+    .box__images-link a {
+      color: #fff;
+      border: 1px solid #fff;
+      margin-left: 5px;
+      margin-right: 5px;
+      padding: 13px 30px;
+      border-radius: 23px;
+      transition: all 0.5s;
+    }
+    .box__images-link a:hover {
+      background-color: white;
+      color: $bottom;
+    }
+    
     .box__text {
       padding: 33px 35px 39px 32px;
+      border-bottom: 1px solid #ececec;
       &-title {
         font-size: 20px;
         line-height: 7px;
@@ -388,6 +422,7 @@
           display: flex;
           align-items: center;
           margin-right: 22px;
+          margin-bottom: 33px;
           .author-logo {
             background-image: url(../images/icons/author-log.png);
             background-repeat: no-repeat;
@@ -405,22 +440,49 @@
             color: black;
           }
           .products-logo {
-            
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: auto;
             background-position: center;
             width: 16px;
-            height: 16px;
+            height: 17px;
             display: inline-block;
             margin-right: 10px;
           }
         }
       }
+      &-description {
+        color: #555555;
+        font-size: 16px;
+        line-height: 30px;
+      }
+    }
+    .box__options {
+      padding: 17px 32px;
+      display: flex;
+      &-price {
+        padding: 10px 15px;
+        color: $bottom;
+        background-color: #e6f1fd;
+        font-size: 15px;
+        font-weight: 500;
+        border-radius: 20px;
+      }
     }
   }
 }
-
-
+.products-btn {
+  text-align: center;
+  button {
+    margin: 20px 5px 0px 0px;
+    padding: 23px 33px;
+    background-color: $bottom;
+    color: white;
+    font-size: 16px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+  } 
+} 
 
 
 
