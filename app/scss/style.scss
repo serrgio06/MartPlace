@@ -337,6 +337,9 @@
     border-radius: 10px;
     background-color: white;
     box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    .btn-sort {
+      margin-top: 30px;
+    }
     button {
       padding: 10px 15px;
       color: #868c96;
@@ -361,6 +364,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
   .new__products-box {
     max-width: 362px;
     width: 100%;
@@ -459,6 +463,14 @@
     .box__options {
       padding: 17px 32px;
       display: flex;
+      justify-content: space-between;
+      &-left {
+        display: flex;
+        justify-content: flex-start;
+        max-width: 200px;
+        width: 100%;
+        align-items: center;
+      }
       &-price {
         padding: 10px 15px;
         color: $bottom;
@@ -466,12 +478,33 @@
         font-size: 15px;
         font-weight: 500;
         border-radius: 20px;
+        margin-right: 10px;
+      }
+      &-heart {
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+        span {
+          margin-left: 7px;
+        }
+      }
+      &-right {
+        display: flex;
+        align-items: center;
+      }
+      &-cart {
+        display: flex;
+        align-items: center;
+        span {
+          margin-left: 7px;
+        }
       }
     }
   }
-}
+
 .products-btn {
   text-align: center;
+  margin-bottom: 120px;
   button {
     margin: 20px 5px 0px 0px;
     padding: 23px 33px;
@@ -484,8 +517,98 @@
   } 
 } 
 
+.followers {
+  background: #eff1f5;
+  overflow: hidden;
+  .title {
+    margin-top: 122px;
+    background-color: white;
+    padding: 40px 0px 40px 30px;
+    border-radius: 10px;
+    font-size: 30px;
+    line-height: 28px;
+    font-weight: 500;
+  }
+  .followers__slider {
+    margin-top: 53px;
+    margin-bottom: 120px;
+    &-wrap {
+      display: flex;
+    }
+  }
+}
+.followers__slider-wrap button {
+  position: absolute;
+  background-color: #7347c1;
+  color: #fff;
+  padding: 15px 0px;
+  cursor: pointer;
+  top: -117px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+.followers__slider-wrap button.slick-prev {
+  right: 74px;
+  border-radius: 23px 0 0 23px;
+  padding-left: 25px;
+  padding-right: 25px;
+  background-image: url(../images/icons/lnr-chevron-left.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 
+}
+.followers__slider-wrap button.slick-next {
+  right: 30px;
+  border-radius: 0 23px 23px 0;
+  padding-right: 25px;
+  padding-left: 25px;
+  background-image: url(../images/icons/lnr-chevron-right.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
+//start advanteges
+
+.advanteges {
+  background-color: #212225;
+  &__inner {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    .advanteges__box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &-img {
+        margin-bottom: 56px;
+      }
+      &-numbers {
+        font-size: 36px;
+        margin-bottom: 14px;
+      }
+      &-text {
+        font-size: 18px;
+        color: white;
+      }
+    }
+    .numbers-orange {
+      color: #feb71d;
+    }
+    .numbers-blue {
+      color: #58c9e9;
+    }
+    .numbers-green {
+      color: #77de51;
+    }
+    .numbers-red {
+      color: #ff6a6d;
+    }
+  }
+}
+
+//end advanteges
 
 
 

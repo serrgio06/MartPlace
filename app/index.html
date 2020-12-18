@@ -179,17 +179,24 @@
         Newest Release Products
       </div>
       <div class="new__products-btn">
-        <button type="button" data-filter=".category-plugins">Plugins</button>
-        <button type="button" data-filter=".category-wordpress">WordPress</button>
-        <button type="button" data-filter=".category-site-template">Site Template</button>
-        <button type="button" data-filter=".category-psd-template">PSD Template</button>
-        <button type="button" data-filter=".category-joomla">Joomla</button>
-        <button type="button" data-filter=".category-user-interface">User Interface</button>
-        <button type="button" data-filter=".category-landing-page">Landing Page</button>
-        <button type="button" data-filter=".category-software">Software</button>
+        <div class="btn-filter">
+          <button type="button" data-filter=".category-plugins">Plugins</button>
+          <button type="button" data-filter=".category-wordpress">WordPress</button>
+          <button type="button" data-filter=".category-site-template">Site Template</button>
+          <button type="button" data-filter=".category-psd-template">PSD Template</button>
+          <button type="button" data-filter=".category-joomla">Joomla</button>
+          <button type="button" data-filter=".category-user-interface">User Interface</button>
+          <button type="button" data-filter=".category-landing-page">Landing Page</button>
+          <button type="button" data-filter=".category-software">Software</button>
+        </div>
+        <div class="btn-sort">
+          <button type="button" data-sort="price:asc">Sort by price (low to high)</button>
+          <button type="button" data-sort="price:desc">Sort by price (high to low)</button>
+          <button type="button" data-sort="popular:desc">Popular</button>
+        </div>
       </div>
       <div class="new__products-inner">
-        <div class="new__products-box mix category-plugins category-new" data-order="1">
+        <div class="new__products-box mix category-plugins category-new" data-popular="50" data-price="20" data-order="1">
           <div class="box__images" href="#" style="background-image: url(images/product-images/2.jpg);">
             <div class="box__images-link">
               <a href="#">More Info</a>
@@ -211,10 +218,22 @@
             <p class="box__text-description">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.</p>
           </div>
           <div class="box__options">
-            <div class="box__options-price">$20</div>
+            <div class="box__options-left">
+              <div class="box__options-price">$10</div>
+              <div class="box__options-heart">
+                <img src="images/icons/lnr-heart.svg" alt="">
+                  <span>56</span> 
+                </div>
+            </div>
+            <div class="box__options-right">
+              <a href="#" class="box__options-cart">
+                <img src="images/icons/lnr-cart.svg" alt="">
+                <span>50</span> 
+              </a>
+            </div>
           </div>
         </div>
-        <div class="new__products-box mix category-psd-template" data-order="2">
+        <div class="new__products-box mix category-psd-template" data-popular="45" data-price="18" data-order="2">
           <div class="box__images" href="#" style="background-image: url(images/product-images/3.jpg);">
             <div class="box__images-link">
               <a href="#">More Info</a>
@@ -236,10 +255,23 @@
             <p class="box__text-description">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.</p>
           </div>
           <div class="box__options">
-            <div class="box__options-price">$18</div>
+            <div class="box__options-left">
+              <div class="box__options-price">$10</div>
+              <div class="box__options-heart">
+                <img src="images/icons/lnr-heart.svg" alt="">
+                  <span>95</span> 
+                </div>
+              <div class="box__options-star"></div>
+            </div>
+            <div class="box__options-right">
+              <a href="#" class="box__options-cart">
+                <img src="images/icons/lnr-cart.svg" alt="">
+                <span>45</span> 
+              </a>
+            </div>
           </div>
         </div>
-        <div class="new__products-box mix category-landing-page" data-order="3">
+        <div class="new__products-box mix category-landing-page" data-popular="43" data-price="10" data-order="3">
           <div class="box__images" href="#" style="background-image: url(images/product-images/4.jpg);">
             <div class="box__images-link">
               <a href="#">More Info</a>
@@ -261,10 +293,22 @@
             <p class="box__text-description">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.</p>
           </div>
           <div class="box__options">
-            <div class="box__options-price">$10</div>
+            <div class="box__options-left">
+              <div class="box__options-price">$10</div>
+              <div class="box__options-heart">
+                <img src="images/icons/lnr-heart.svg" alt="">
+                  <span>58</span> 
+                </div>
+            </div>
+            <div class="box__options-right">
+              <a href="#" class="box__options-cart">
+                <img src="images/icons/lnr-cart.svg" alt="">
+                <span>43</span> 
+              </a>
+            </div>
           </div>
         </div>
-        <div class="new__products-box mix category-plugins category-new" data-order="4">
+        <div class="new__products-box mix category-plugins category-new" data-popular="14" data-price="25" data-order="4">
           <div class="box__images" href="#" style="background-image: url(images/product-images/5.jpg);">
             <div class="box__images-link">
               <a href="#">More Info</a>
@@ -286,10 +330,22 @@
             <p class="box__text-description">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.</p>
           </div>
           <div class="box__options">
-            <div class="box__options-price">$10 - 50</div>
+            <div class="box__options-left">
+              <div class="box__options-price">$10</div>
+              <div class="box__options-heart">
+                <img src="images/icons/lnr-heart.svg" alt="">
+                  <span>69</span> 
+                </div>
+            </div>
+            <div class="box__options-right">
+              <a href="#" class="box__options-cart">
+                <img src="images/icons/lnr-cart.svg" alt="">
+                <span>14</span> 
+              </a>
+            </div>
           </div>
         </div>
-        <div class="new__products-box mix category-psd-template" data-order="5">
+        <div class="new__products-box mix category-psd-template" data-popular="35" data-price="50" data-order="5">
           <div class="box__images" style="background-image: url(images/product-images/6.jpg);">
             <div class="box__images-link">
               <a href="#">More Info</a>
@@ -311,10 +367,23 @@
             <p class="box__text-description">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.</p>
           </div>
           <div class="box__options">
-            <div class="box__options-price">$10 - 50</div>
+            <div class="box__options-left">
+              <div class="box__options-price">$10</div>
+              <div class="box__options-heart">
+                <img src="images/icons/lnr-heart.svg" alt="">
+                  <span>84</span> 
+                </div>
+              <div class="box__options-star"></div>
+            </div>
+            <div class="box__options-right">
+              <a href="#" class="box__options-cart">
+                <img src="images/icons/lnr-cart.svg" alt="">
+                <span>35</span> 
+              </a>
+            </div>
           </div>
         </div>
-        <div class="new__products-box mix category-software category-new" data-order="6">
+        <div class="new__products-box mix category-software category-new" data-popular="89" data-price="10" data-order="6">
           <div class="box__images" style="background-image: url(images/product-images/7.jpg);">
             <div class="box__images-link">
               <a href="#">More Info</a>
@@ -336,7 +405,20 @@
             <p class="box__text-description">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.</p>
           </div>
           <div class="box__options">
-            <div class="box__options-price">$10</div>
+            <div class="box__options-left">
+              <div class="box__options-price">$10</div>
+              <div class="box__options-heart">
+                <img src="images/icons/lnr-heart.svg" alt="">
+                  <span>358</span> 
+                </div>
+              <div class="box__options-star"></div>
+            </div>
+            <div class="box__options-right">
+              <a href="#" class="box__options-cart">
+                <img src="images/icons/lnr-cart.svg" alt="">
+                <span>89</span> 
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -346,6 +428,217 @@
     </div>  
   </section>
   
+  <section class="followers">
+    <div class="container">
+      <div class="title">
+        Your Followers Feed
+      </div>
+      <div class="followers__slider">
+        <div class="followers__slider-wrap">
+          <div class="new__products-box">
+            <div class="box__images" style="background-image: url(images/product-images/7.jpg);">
+              <div class="box__images-link">
+                <a href="#">More Info</a>
+                <a href="#">Live Demo</a>
+              </div>
+            </div>
+            <div class="box__text">
+              <h4 class="box__text-title">Bryson - Portfolio Template</h4>
+              <div class="box__text-author">
+                <a class="author-link" href="#">
+                  <div class="author-logo"></div>
+                  <span class="author-name">Coder-Lab</span>
+                </a>
+                <a class="author-link" href="#">
+                  <div class="products-logo" style="background-image: url(../images/icons/products-logo3.png)"></div>
+                  <span class="products-name">HTML</span>
+                </a>
+              </div> 
+              <p class="box__text-description">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.</p>
+            </div>
+            <div class="box__options">
+              <div class="box__options-left">
+                <div class="box__options-price">$10</div>
+                <div class="box__options-heart">
+                  <img src="images/icons/lnr-heart.svg" alt="">
+                    <span>56</span> 
+                  </div>
+                <div class="box__options-star"></div>
+              </div>
+              <div class="box__options-right">
+                <a href="#" class="box__options-cart">
+                  <img src="images/icons/lnr-cart.svg" alt="">
+                  <span>50</span> 
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="new__products-box">
+            <div class="box__images" style="background-image: url(images/product-images/6.jpg);">
+              <div class="box__images-link">
+                <a href="#">More Info</a>
+                <a href="#">Live Demo</a>
+              </div>
+            </div>  
+            <div class="box__text">
+              <h4 class="box__text-title">Marketify Coffee Shop</h4>
+              <div class="box__text-author">
+                <a class="author-link" href="#">
+                  <div class="author-logo"></div>
+                  <span class="author-name">AazzTech</span>
+                </a>
+                <a class="author-link" href="#">
+                  <div class="products-logo" style="background-image: url(../images/icons/products-logo2.png)"></div>
+                  <span class="products-name">PSD</span>
+                </a>
+              </div> 
+              <p class="box__text-description">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.</p>
+            </div>
+            <div class="box__options">
+              <div class="box__options-left">
+                <div class="box__options-price">$10</div>
+                <div class="box__options-heart">
+                  <img src="images/icons/lnr-heart.svg" alt="">
+                    <span>96</span> 
+                  </div>
+                <div class="box__options-star"></div>
+              </div>
+              <div class="box__options-right">
+                <a href="#" class="box__options-cart">
+                  <img src="images/icons/lnr-cart.svg" alt="">
+                  <span>20</span> 
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="new__products-box">
+            <div class="box__images" href="#" style="background-image: url(images/product-images/4.jpg);">
+              <div class="box__images-link">
+                <a href="#">More Info</a>
+                <a href="#">Live Demo</a>
+              </div>
+            </div>
+            <div class="box__text">
+              <h4 class="box__text-title">Bryson - Portfolio Template</h4>
+              <div class="box__text-author">
+                <a class="author-link" href="#">
+                  <div class="author-logo"></div>
+                  <span class="author-name">Artcorner</span>
+                </a>
+                <a class="author-link" href="#">
+                  <div class="products-logo" style="background-image: url(../images/icons/products-logo3.png)"></div>
+                  <span class="products-name">HTML</span>
+                </a>
+              </div> 
+              <p class="box__text-description">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.</p>
+            </div>
+            <div class="box__options">
+              <div class="box__options-left">
+                <div class="box__options-price">$10</div>
+                <div class="box__options-heart">
+                  <img src="images/icons/lnr-heart.svg" alt="">
+                    <span>56</span> 
+                  </div>
+              </div>
+              <div class="box__options-right">
+                <a href="#" class="box__options-cart">
+                  <img src="images/icons/lnr-cart.svg" alt="">
+                  <span>50</span> 
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="new__products-box">
+            <div class="box__images" href="#" style="background-image: url(images/product-images/5.jpg);">
+              <div class="box__images-link">
+                <a href="#">More Info</a>
+                <a href="#">Live Demo</a>
+              </div>
+            </div>
+            <div class="box__text">
+              <h4 class="box__text-title">E-commerce Shopping Cart</h4>
+              <div class="box__text-author">
+                <a class="author-link" href="#">
+                  <div class="author-logo"></div>
+                  <span class="author-name">Design-Hub</span>
+                </a>
+                <a class="author-link" href="#">
+                  <div class="products-logo" style="background-image: url(../images/icons/products-logo.png)"></div>
+                  <span class="products-name">Plugin</span>
+                </a>
+              </div> 
+              <p class="box__text-description">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.</p>
+            </div>
+            <div class="box__options">
+              <div class="box__options-left">
+                <div class="box__options-price">$10</div>
+                <div class="box__options-heart">
+                  <img src="images/icons/lnr-heart.svg" alt="">
+                    <span>56</span> 
+                  </div>
+              </div>
+              <div class="box__options-right">
+                <a href="#" class="box__options-cart">
+                  <img src="images/icons/lnr-cart.svg" alt="">
+                  <span>50</span> 
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="advanteges">
+    <div class="container">
+      <div class="advanteges__inner">
+        <div class="advanteges__box">
+          <div class="advanteges__box-img">
+            <img src="images/icons/briefcase.png" alt="">
+          </div>
+          <div class="advanteges__box-numbers numbers-orange">
+            38,436
+          </div>
+          <div class="advanteges__box-text">
+            items for sale
+          </div>
+        </div>
+        <div class="advanteges__box">
+          <div class="advanteges__box-img">
+            <img src="images/icons/cloud-download.png" alt="">
+          </div>
+          <div class="advanteges__box-numbers numbers-blue">
+            3,736
+          </div>
+          <div class="advanteges__box-text">
+            total sales
+          </div>
+        </div>
+        <div class="advanteges__box">
+          <div class="advanteges__box-img">
+            <img src="images/icons/smile.png" alt="">
+          </div>
+          <div class="advanteges__box-numbers numbers-green">
+            2,736
+          </div>
+          <div class="advanteges__box-text">
+            happy customers
+          </div>
+        </div>
+        <div class="advanteges__box">
+          <div class="advanteges__box-img">
+            <img src="images/icons/users.png" alt="">
+          </div>
+          <div class="advanteges__box-numbers numbers-red">
+            25,736
+          </div>
+          <div class="advanteges__box-text">
+            members
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
   
