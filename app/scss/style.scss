@@ -609,8 +609,124 @@
 }
 
 //end advanteges
+//start choose
 
+.choose {
+  padding: 120px 0px 120px;
+  &__title {
+    margin-bottom: 35px;
+    text-align: center;
+    font-size: 36px;
+    line-height: 28px;
+    font-weight: 500;
+    span {
+      color: $bottom;
+    }
+  }
+  &__text {
+    text-align: center;
+    margin-bottom: 65px;
+    font-size: 16px;
+    line-height: 30px;
+  }
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__box {
+    max-width: 365px;
+    width: 100%;
+    margin-bottom: 22px;
+    padding: 20px 35px 62px 35px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+    &-number {
+      font-size: 48px;
+      color:rgba(92, 135, 248, 0.25);
+      text-align: left;
+    }
+    &-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    &-img {
+      margin-bottom: 40px;
+    }
+    &-title {
+      font-size: 24px;
+      font-weight: 500;
+      margin-bottom: 25px;
+    }
+    &-text {
+      font-size: 16px;
+      color: #555555;
+    }
+  }
+}
 
+//end choose
 
+//start opportunities
 
+.opportunities__inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+.opportunities__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 10px ;
+  color: white;
+  &-img {
+    margin-bottom: 44px;
+  }
+  &-title {
+    font-size: 36px;
+    margin-bottom: 35px;
+  }
+  &-text {
+    text-align: center;
+    max-width: 586px;
+    font-size: 16px;
+    margin-bottom: 48px;
+  }
+  &-link {
+    padding: 20px 27px;
+    background-color: white;
+    border-radius: 40px;
+    transition: transform .2s;
+  }
+  &-link:hover {
+    transform: scale(1.5);
+  }
+}
+.opportunities-1 {
+  width: 50%;
+  background-image: url(../images/opportunities/BG__op-1.png);
+  background-color: $bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+}
+.opportunities-2 {
+  width: 50%;
+  background-image: url(../images/opportunities/BG__op-2.png);
+  background-color: #7347c1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.opportunities-1 .opportunities__box-link  {
+  color: $bottom;
+}
+.opportunities-2 .opportunities__box-link  {
+  color: #7347c1;
+}
+
+//end opportunities
 
