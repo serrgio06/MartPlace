@@ -20,4 +20,10 @@ $(function(){
     readOnly: true
   });
 
+  $('.reviews__slider-wrap').slick({
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    arrows: false
+  });
+
 });
